@@ -6,12 +6,11 @@ const countDisplay = document.getElementById('linkCount');
 
 function filterLinks() {
   const query = searchInput.value.toLowerCase();
-  let visibleCount = 0; // 2. Initialize the counter
+  let visibleCount = 0;
 
   links.forEach(link => {
     const text = link.textContent.toLowerCase();
 
-    // 3. Check for matches and increment the counter
     if (text.includes(query)) {
       link.style.display = 'block';
       visibleCount++;
@@ -20,12 +19,13 @@ function filterLinks() {
     }
   });
 
-  // 4. Render the count or "Item not found" to the HTML
   if (countDisplay) {
     if (visibleCount === 0) {
-      countDisplay.textContent = '⚠️ Item not found.';
+      countDisplay.textContent = '⚠️ No jobs found.';
+    } else if (visibleCount === 1) {
+      countDisplay.textContent = '1 job found.';
     } else {
-      countDisplay.textContent = `${visibleCount} job site.`;
+      countDisplay.textContent = `${visibleCount} jobs found.`;
     }
   }
 }
