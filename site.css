@@ -84,47 +84,30 @@ a {
   align-items: center;
   gap: 1rem; 
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 16%); 
-}
-
-.llc {
   background-color: var(--card-colors);
 }
 
-.appliances {
-  background-color: var(--card-colors);
+.card.financial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.readme {
-  background-color: #7cd998;
-  color: #222;
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
-.financial {
-  background-color: var(--card-colors);
+
+.card:hover {
+  outline: 3px solid #4a7c59; /* You can change 'green' to a specific hex code like #4CAF50 */
 }
-.projects {
-  background-color: var(--card-colors);
-}
-.tucson {
-  background-color: var(--card-colors);
-}
-.insurance {
-  background-color: var(--card-colors);
-}
-.lexus {
-  background-color: var(--card-colors);
-}
-.medicine {
-  background-color: var(--card-colors);
-}
-.taxes {
-  background-color: var(--card-colors);
-}
-.utilities {
-  background-color: var(--card-colors);
-}
-*/ .card:hover {
-  transform: scale(1.05);
-}
+
+
+
 
 /* 📱 Responsive layout */
 @media (max-width: 600px) {
@@ -158,39 +141,13 @@ a {
     color: #81ff8cc4;
   }
 
-  .appliances {
-    background-color: var(--card-colors-dark);
-  } 
-  .financial {
-    background-color: var(--card-colors-dark);
-  }
-  .projects {
-    background-color: var(--card-colors-dark);
-  } 
-  .tucson {
-    background-color: var(--card-colors-dark);
-  } 
-  .insurance {
-    background-color: var(--card-colors-dark);
-  } 
-  .lexus {
-    background-color: var(--card-colors-dark);
-  } 
-  .medicine {
-    background-color: var(--card-colors-dark);
-  } 
-  .taxes {
-    background-color: var(--card-colors-dark);
-  } 
-  .utilities {
-    background-color: var(--card-colors-dark);
-  } 
-  .llc {
-    background-color: var(--card-colors-dark);
-  } 
-  .readme {
-    background-color: var(--card-colors-dark);
-  }
+.card {
+  background-color: var(--card-colors-dark);
+}
+
+.card:hover {
+  outline: 3px solid var(--accent); /* You can change 'green' to a specific hex code like #4CAF50 */
+}
 
   #linkSearch {
     background-color: #262626;
