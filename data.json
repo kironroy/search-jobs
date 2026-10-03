@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Kohl's",
+    "url": "https://careers.kohls.com/",
+    "keyword": "retail",
+    "logo": "/imgs/Kohls_logo.svg",
+    "alt": "Kohl's logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 2,
+    "name": "Five Below",
+    "url": "https://careers.fivebelow.com/us/en/",
+    "keyword": "retail",
+    "logo": "/imgs/five-below-seeklogo.svg",
+    "alt": "Five Below logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 3,
+    "name": "Costco",
+    "url": "https://careers.costco.com/jobs",
+    "keyword": "retail",
+    "logo": "/imgs/Costco_Wholesale_logo.svg",
+    "alt": "Costco logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 4,
+    "name": "Marshalls",
+    "url": "https://jobs.tjx.com/global/en/",
+    "keyword": "retail",
+    "logo": "/imgs/Marshalls_logo.svg",
+    "alt": "Marshalls logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 5,
+    "name": "TJ Maxx",
+    "url": "https://www.tjx.com/careers",
+    "keyword": "retail",
+    "logo": "/imgs/TJ_Maxx_logo.svg",
+    "alt": "TJ Maxx logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 6,
+    "name": "Burlington",
+    "url": "https://www.burlington.com/careers",
+    "keyword": "retail",
+    "logo": "/imgs/Burlington_Stores_logo.svg",
+    "alt": "Burlington logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 7,
+    "name": "Albertsons",
+    "url": "https://www.albertsons.com/careers.html",
+    "keyword": "retail",
+    "logo": "/imgs/Albertsons_logo.svg",
+    "alt": "Albertsons logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 8,
+    "name": "Ralphs",
+    "url": "https://www.krogerfamilycareers.com/",
+    "keyword": "retail",
+    "logo": "/imgs/Ralphs.svg",
+    "alt": "Ralphs logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 9,
+    "name": "Trader Joe's",
+    "url": "https://www.traderjoes.com/home/careers.html",
+    "keyword": "retail",
+    "logo": "/imgs/trader.svg",
+    "alt": "Trader Joe's logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 10,
+    "name": "Hobby Lobby",
+    "url": "https://careers.hobbylobby.com/",
+    "keyword": "retail",
+    "logo": "/imgs/Hobby_Lobby_logo.svg",
+    "alt": "Hobby Lobby logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 11,
+    "name": "Home Depot",
+    "url": "https://careers.homedepot.com/",
+    "keyword": "retail",
+    "logo": "/imgs/The_Home_Depot-Logo.wine.svg",
+    "alt": "Home Depot logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 12,
+    "name": "Lowes",
+    "url": "https://talent.lowes.com/us/en/",
+    "keyword": "retail",
+    "logo": "/imgs/Lowes_logo.svg",
+    "alt": "Lowes logo",
+    "description": "Explore retail and store management opportunities."
+  }
+]

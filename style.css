@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f8f9fa;
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --primary-blue: #000066;
+  --link-blue: #0000ff;
+  --focus-outline: #ff9900;
+  --card-bg: #ffffff;
+}
+
+body {
+  /* Modern System Font Stack */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hides structural headers from visual display while keeping them for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.instructions-card {
+  background-color: var(--card-bg);
+  border-left: 5px solid var(--focus-outline);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #e0e0e0;
+  color: var(--text-primary);
+  border: 2px solid transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #cccccc;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+/* Critical for ADA compliance */
+.filter-btn:focus-visible,
+.link-card a:focus-visible {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* Automatically fits as many cards as possible, minimum 280px wide */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.link-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.link-card h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.link-card {
+  position: relative; /* Required anchor point for the stretched link */
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 2px solid transparent; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on the card */
+.link-card:hover {
+  border-color: #e65100; 
+  border-width: 3px;
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.15); 
+  transform: translateY(-2px); 
+}
+
+/* The Stretched Link trick: makes the link cover the full card */
+.link-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* Spans top: 0, right: 0, bottom: 0, left: 0 */
+  z-index: 1;
+}
+
+/* Highlight the entire card when a keyboard user tabs onto the link */
+.link-card:has(a:focus-visible) {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 4px;
+}
+
+.keyword-badge {
+  display: inline-block;
+  background-color: #eeeeee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.75rem;
+}
+
+.card-logo {
+  height: 4px; /* Lock the height uniformly */
+  width: auto; /* Force the width to scale naturally based on the height */
+  max-width: 16px; /* Prevent exceptionally long logos from overriding the flexbox */
+  object-fit: contain; /* Double-protection to keep the image inside its bounds */
+  display: block; /* Removes inline text-spacing quirks */
+}
+/* Update your existing .keyword-badge to remove the bottom margin */
+.keyword-badge {
+  display: inline-block;
+  background-color: #eeeeee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0; /* Changed from 0.5rem */
+  width: fit-content;
+}
+
+/* Mobile Friendly Adjustments */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+  .filter-btn {
+    width: 100%;
+  }
+}
