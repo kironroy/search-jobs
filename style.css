@@ -218,3 +218,47 @@ main {
     width: 100%;
   }
 }
+
+/* Mobile Typography & Touch Target Scaling */
+@media (max-width: 600px) {
+  /* Elevate base font size on mobile screens */
+  body {
+    font-size: 1.125rem; /* ~18px base text */
+    line-height: 1.65;
+  }
+
+  /* Page Header */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  /* Instructions Card */
+  .instructions-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .instructions-card p {
+    font-size: 1.15rem;
+  }
+
+  /* Filter Buttons: Larger text + bigger touch area for tapping */
+  .filter-btn {
+    font-size: 1.15rem;
+    padding: 1rem 1.25rem; /* Taller tap target */
+  }
+
+  /* Card Headings & Body Text */
+  .link-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .link-card p {
+    font-size: 1.1rem;
+  }
+
+  /* Keyword Badges */
+  .keyword-badge {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.65rem;
+  }
+}
