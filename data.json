@@ -106,5 +106,41 @@
     "logo": "/imgs/Lowes_logo.svg",
     "alt": "Lowes logo",
     "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 13,
+    "name": "Amazon",
+    "url": "https://hiring.amazon.com/search/featured-warehouse-jobs?cmpid=SAGOSD1880H11:pcid-20940279298:agid-156926444079:adid-687420541185:tct-nb:kwd-warehouse%20jobs:mt-p:ext-:lng-en:ct-us",
+    "keyword": "warehouse",
+    "logo": "/imgs/Amazon_logo.svg",
+    "alt": "Amazon logo",
+    "description": "Explore retail and store management opportunities."
+  },
+  {
+    "id": 14,
+    "name": "Uline",
+    "url": "https://www.uline.jobs/",
+    "keyword": "warehouse",
+    "logo": "/imgs/Uline_logo.svg",
+    "alt": "Uline logo",
+    "description": "Explore warehouse and logistics opportunities."
+  },
+  {
+    "id": 15,
+    "name": "UPS",
+    "url": "https://www.jobs-ups.com/us/en",
+    "keyword": "warehouse",
+    "logo": "/imgs/UPS_logo.svg",
+    "alt": "UPS logo",
+    "description": "Explore warehouse and logistics opportunities."
+  },
+  {
+    "id": 16,
+    "name": "FedEx",
+    "url": "https://careers.fedex.com/",
+    "keyword": "warehouse",
+    "logo": "/imgs/FedEx_logo.svg",
+    "alt": "FedEx logo",
+    "description": "Explore warehouse and logistics opportunities."
   }
 ]
